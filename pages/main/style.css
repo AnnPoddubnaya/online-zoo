@@ -1,0 +1,1862 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700&display=swap");
+@font-face {
+	font-family: 'Recoleta';
+	src: url('../../assets/fonts/Recoleta-Regular.woff2') format('woff2'), url('/online-zoo/assets/fonts/Recoleta-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+
+body{
+	width: 100%;
+	height: 100%;
+}
+[class*="__container"]{
+width: 1160px;
+margin: 0 auto;
+font-family: 'Roboto';
+font-style: normal;
+}
+
+[class*="__button"]{
+border-radius: 25px;
+width: 298px;
+height: 54px;
+}
+
+.animal{
+width: 1600px;
+margin: 0 auto;
+height: 780px;
+background: url('../../assets/images/petStory/animal/panda.jpg') 0 0 / cover no-repeat, url('/online-zoo/assets/images/petStory/animal/bg.jpg') 0 0 / cover no-repeat;
+}
+.bg{
+	display: none;
+}
+.hidden{
+	display: none;
+}
+
+/* ------header-------- */
+.header {
+width: 1600px;
+height: 80px;
+background: #000000;
+backdrop-filter: blur(2px);
+margin: 0 auto;
+}
+
+.header__container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 16px 0;
+}
+
+.header__logo {
+	position: relative;
+	width: 82px;
+	height: 52px;
+}
+.logo-header {
+}
+.logo-header__image{
+position: absolute;
+width:10px;
+height:35px;
+top:15px;
+left:12px;
+}
+.logo-header__link {
+display: block;
+font-weight: 400;
+font-size: 19.0145px;
+line-height: 120%;
+text-align: center;
+color: #FFFFFF;
+border: 1.18841px solid #FFFFFF;
+}
+
+.nav {
+padding:0px 48px 0 63px;
+}
+
+.nav__list {
+display: flex;
+padding: 0;
+}
+.nav__item:not(:last-child){
+	padding: 0 58px 0 0;
+}
+.nav__item {
+	height: 22px;
+}
+.nav__item-active{
+	background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+.nav__link {
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+color: #FFFFFF;
+}
+.nav__link:hover{
+	background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	transition: ease 0.7s;
+}
+.header__designed:hover {
+	background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	transition: ease 0.7s;
+}
+
+
+.designed-header__link {
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+color: #FFFFFF;
+display: block;
+}
+/* --------watch online-------- */
+.watch-online {
+}
+.watch-online__title {
+background: url('../../assets/images/petStory/animal/Ellipse.png') 70% 13px no-repeat;
+font-weight: 700;
+font-size: 106.496px;
+line-height: 75%;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+padding: 86px 0px 60px 660px;
+}
+
+.watch-online__title_yellow{
+color:#FFEE2E;
+}
+.watch-online__button {
+background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+margin:  0px 0px 100px 760px;
+}
+.watch-online__button:hover{
+background: #E47209;
+
+cursor: pointer;
+}
+.watch-online__link{
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+/* -------------backstage--------- */
+.backstage {
+padding: 140px 0 130px 0;
+background: url('../../assets/images/petStory/backstage/flower_foto1.png') 100% 10px  no-repeat;
+}
+.backstage__container {
+	display: flex;
+	gap: 87px;
+	color: #333B41;
+	
+}
+
+.backstage__image {
+width: 609px;
+height: 403px;
+}
+.backstage__image{
+	width: 609px;
+	height: 403px;
+}
+
+.backstage__title {
+font-weight: 400;
+font-size: 48px;
+line-height: 120%;
+padding: 0 0 20px 0;
+}
+.backstage__text {
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+padding: 0 0 54px 0;
+}
+.backstage__subtitle {
+	font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+padding: 0 0 34px 0;
+}
+/* -------------------pets-------------------- */
+.pets {
+	display: flex;
+	flex-direction: column;
+	row-gap: 78px;
+	align-items: center;
+	background: url('../../assets/images/petStory/pets/palm_foto.png') 0 636px no-repeat, url('/online-zoo/assets/images/petStory/pets/strelitzia\ 1.png') 100% 821px no-repeat;
+}
+.pets__slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+}
+.slider-pets__arrow-left {
+	width: 62px;
+	height: 62px;
+	background-color:#FE9013;
+	border-radius:50%;
+	position: relative;
+	
+}
+.slider-pets__arrow-left:hover{
+	cursor: pointer;
+	background: #4B9200;
+	transition: ease 0.7s;	
+}
+.arrow-left {
+position: absolute;
+top: 40%;
+left: 40%;
+z-index: 2;
+}
+/* .slider-pets__carts{
+	width: 1600px;
+	height: 875px;
+} */
+.carts__container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px 28px;
+	justify-content: space-between;
+	overflow: hidden;
+	width: 1160px;
+	height: 879px;
+}
+.carts-pets {
+height: 426px;
+border: 1px solid #FE9013;
+border-radius: 5px;
+position: relative;
+overflow: hidden;
+}
+/* .carts-pets:nth-child(4){
+	display: none;
+} */
+/* 
+.carts-pets:nth-of-type(9){
+	display: none;
+} */
+/* .carts-pets:nth-of-type(5){
+	display: none;
+} */
+
+.cart-pets__image {
+	width: 366px;
+	height: 366px;
+}
+.carts-pets:hover .cart-pets__image{
+	transform: scale(1.05);
+	transition: all 1s;
+}
+.cart-pets__body_banana {
+	background: url('../../assets/images/petStory/pets/icon/banana-bamboo_icon.svg') 290px 8px no-repeat;
+}
+.carts-pets:hover .cart-pets__body_banana{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.451);
+
+}
+
+.carts-pets:hover .cart-pets__body_meet-fish{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.451);
+}
+.carts-pets:hover .cart-pets__title{
+	font-size: 25px;
+	padding: 100px  80px 10px 40px;
+	color:#F1F3F2
+}
+.carts-pets:hover .cart-pets__text{
+	font-size: 20px;
+	padding: 0px  80px 0px 40px;
+	color:#F1F3F2
+}
+
+.cart-pets__body_meet-fish{
+	background: url('../../assets/images/petStory/pets/icon/meet-fish_icon.svg') 280px 8px no-repeat;
+}
+.cart-pets__title {
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+text-transform: uppercase;
+color: #000000;
+padding: 8px 0 0 16px;
+}
+.cart-pets__text {
+font-weight: 300;
+font-size: 15px;
+line-height: 120%;
+color: #000000;
+padding:0 0 0 16px;
+}
+.slider-pets__arrow-right {
+	width: 62px;
+	height: 62px;
+	background-color:#FE9013;
+	border-radius:50%;
+	position: relative;
+
+}
+.slider-pets__arrow-right:hover{
+	cursor: pointer;
+	transition: all 0.7s;
+	background: #4B9200;
+}
+.arrow-right {
+	position: absolute;
+top: 40%;
+left: 40%;
+z-index: 2;
+}
+.pets__button {
+	background-color:#FE9013;
+	margin:  0 0 100px 0;
+}
+.pets__button:hover{
+	transition: ease 0.7s;
+	background: #E47209;
+	cursor: pointer;
+}
+.pets__link {
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+/* --------------friend--------- */
+.friend {
+	width: 1600px;
+	margin: 0 auto;
+	background: url('../../assets/images/petStory/friend/bg.jpg') 0 0 / cover no-repeat;
+	padding: 69px 0 100px 0;
+}
+.friend__container {
+	display: flex;
+	flex-direction: column;
+	background: rgba(253, 253, 255, 0.52);
+	backdrop-filter: blur(2px);
+	border-radius: 20px;
+	/* padding: 69px 220px 0 220px; */
+}
+.friend__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+.content {
+}
+.content__title {
+font-weight: 400;
+font-size: 48px;
+line-height: 120%;
+text-align: center;
+color: #FE9013;
+padding:41px 0 29px 0;
+}
+.content__subtitle {
+align-self: start;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+color: #333B41;
+padding: 0 0 40px 99px;
+}
+
+.content__text {
+align-self: start;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+color: #333B41;
+padding: 0 0 10px 99px;
+}
+.content__text_underline{
+	border-bottom: 1px solid #FE9013;
+	font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+color: #333B41;
+}
+.friend__body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.body {
+	padding: 50px 0 60px 0;
+}
+
+.body__title {
+font-weight: 400;
+font-size: 36px;
+line-height: 130%;
+color: #333B41;
+padding: 0 0 40px 0;
+}
+.body__cards {
+	display: flex;
+	column-gap: 130px;
+
+}
+.cards {
+		align-items: center;
+	justify-content: center;
+}
+.card {
+	width: 168px;
+	height: 244px;
+	position: relative;
+}
+.card:not(:last-child):before{
+	content: "";
+	display: block;
+	background: url('../../assets/images/petStory/friend/Vector.svg');
+	width: 69px;
+	height: 35px;
+	position: absolute;
+	top: 60px;
+	left: 200px;
+
+}
+.card__image{
+	width: 168px;
+	height: 168px;
+	background-color: #fff;
+	border: 1px solid #F9804B;
+	border-radius: 5px;
+	margin:  0 0 30px 0;
+	display: flex;
+	justify-content: center;
+}
+.image-card__svg{
+align-self: center;
+}
+.card__text {
+}
+.friend__button {
+	align-self: center;
+	background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+	margin:  0 0 59px 0;
+}
+
+.friend__button:hover{
+	
+	background: #E47209;
+	cursor: pointer;
+
+}
+.friend__link {
+	font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+/*---------------- Testimonials ---------------*/
+.testimonials {
+	position: relative;
+	background: url("../../assets/images/petStory/testimonials/leav.png") 100% 644px no-repeat;
+}
+.testimonials__container {
+	display: flex;
+	flex-direction: column;
+
+
+}
+.testimonials__title {
+	padding: 140px 0 47px 0;
+	font-weight: 400;
+font-size: 36px;
+line-height: 130%;
+text-align: center;
+color: #333B41;
+}
+
+.testimonials__cards {
+	/* display: flex;
+column-gap: 30px;
+margin: 0 0 10px 0;
+align-items: center;
+justify-content: center; */
+display: grid;
+/* grid-template-columns: 25%; */
+grid-column-gap: 8px;
+grid-auto-flow: column;
+padding: 25px 0;
+list-style: none;
+overflow-x: scroll;
+scroll-snap-type:x mandatory;
+
+}
+.testimonials__cards::-webkit-scrollbar{
+	height: 7px;
+	width: 112px;
+}
+.testimonials__cards::-webkit-scrollbar-thumb,
+.testimonials__cards::-webkit-scrollbar-track{
+	border-radius: 92px;
+}
+.testimonials__cards::-webkit-scrollbar-thumb{
+	background: #E47209;
+	width: 112px;
+}
+.testimonials__cards::-webkit-scrollbar-track{
+	background: (--thumb);
+}
+.card-testimonials__border{
+overflow: hidden;
+border-radius: 20px;
+width: 237px;
+height: 361px;
+padding: 15px 15px 19px 15px;
+background-color:white;
+
+}
+.card-testimonials{
+	border: 2px solid  pink;
+		border-radius: 20px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	/* padding: 20px; */
+	scroll-snap-align: start;
+	transition: all 0.2s;
+	width: 280px;
+}
+.card-testimonials__body {
+	display: flex;
+	padding: 0 0 10px 0;
+}
+.card-testimonials__img {
+}
+.card-testimonials__user{
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 0 10px;
+}
+.card-testimonials__name {
+font-weight: 400;
+font-size: 16px;
+line-height: 120%;
+color: #000000;
+
+}
+.card-testimonials__local {
+	font-weight: 300;
+font-size: 15px;
+line-height: 120%;
+color: #BDBDBD;
+}
+.card-testimonials__text {
+	font-weight: 300;
+font-size: 15px;
+line-height: 120%;
+color: #767474;
+}
+/* -----popup------- */
+.hid{
+	visibility: hidden;
+}
+.popup{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-color: rgba(1, 1, 1, 0.5);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.popup-testimonials {
+background: rgba(245, 247, 246, 1);
+display: flex;
+justify-content: center;
+align-items: center;
+width: 320px;
+height: 428px;
+padding: 20px 36px 17px 17px;
+}
+.popup__clouse{
+	position: relative;
+	top: -200px;
+	right: -290px;
+	width: 14px;
+	height: 14px;
+
+}
+.popup-testimonials__border {
+	width: 265px;
+	height: 389px;
+
+background: #F1F3F2;
+border-radius: 20px;
+border: 1px solid pink;
+}
+.popup-testimonials__body {
+	padding: 15px 14px 0 16px;
+	display: flex;
+}
+.popup-testimonials__img {
+	padding:0 10px 0 0;
+}
+.popup-testimonials__user {
+}
+.popup-testimonials__name {
+	font-weight: 400;
+font-size: 16px;
+line-height: 120%;
+color: #000000;
+}
+.popup-testimonials__local {
+	font-weight: 300;
+font-size: 15px;
+line-height: 120%;
+color: #BDBDBD;
+}
+.popup-testimonials__text {
+	padding: 10px 14px 19px 16px;
+	text-align: justify;
+	font-weight: 300;
+font-size: 15px;
+line-height: 120%;
+color: #767474;
+}
+/* .testimonials__line {
+width: 599px;
+height: 8px;
+background: #F5F7F6;
+border-radius: 5px;
+margin:7px 0 29px 290px;
+} */
+/* .testimonials__line::before{
+content: "";
+display: block;
+width: 115.19px;
+height: 6px;
+background: #FE9013;
+border-radius: 5px;
+}
+.testimonials__line:hover::before{
+
+animation:line 3s step-end;
+
+	}
+	@keyframes line{
+	   0%{
+			transform: translateX(120px);
+		}
+		25%{
+			transform: translateX(240px);
+		}
+		50%{
+			transform: translateX(360px);
+		}
+		75%{
+			transform: translateX(480px);
+		}
+		100%{
+			transform: translateX(600px);
+		}
+	} */
+.testimonials__button {
+	align-self: start;
+	background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+border-radius: 5px;
+margin: 50px 0 180px 10px;
+	
+}
+.testimonials__button:hover{
+	background: #E47209;
+	cursor: pointer;
+
+}
+.testimonials__link{
+	font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+/* ----------footer--------- */
+.footer {
+	width: 1600px;
+	margin: 0 auto;
+	background-color:rgba(17, 17, 21, 1);
+}
+.footer__container {
+	display: flex;
+	flex-direction: column;
+}
+.footer__body {
+	display: flex;
+	padding: 40px 0 36px 0 ;
+}
+
+.body-footer {
+}
+.body-footer__logo {
+	position: relative;
+	width: 82px;
+	height: 52px;
+}
+.logo-footer {
+	padding:0 711px 0 0;
+}
+.logo-footer__image {
+position: absolute;
+width:10px;
+height:35px;
+top:15px;
+left:12px;
+}
+.logo-footer__link {
+	display: block;
+font-weight: 400;
+font-size: 19.0145px;
+line-height: 120%;
+text-align: center;
+color: #FFFFFF;
+border: 1.18841px solid #FFFFFF;
+padding: 0.55px 4.75px 6.55px 4.75px;
+}
+.body-footer__form {
+}
+.form {
+	display: flex;
+	flex-direction: column;
+}
+.form__text {
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+color: #FFFFFF;
+padding:0 0 14px 0;
+}
+.form__inputs{
+	display: flex;
+	
+}
+.form__input{
+	width: 210px;
+	border: 1px solid #D31414;
+	background-color:white;
+	margin: 0 10px 0 0;
+	padding: 10px 7px 10px 10px;
+}
+.form__input::-webkit-input-placeholder {
+   color:  #D31414;
+}
+.form__input:focus::-webkit-input-placeholder{
+	color: #BDBDBD;
+	}
+
+.form__button {
+width: 129px;
+height: 42px;
+background: #F1F3F2;	
+border: 1px solid #D31414;
+border-radius: 5px;
+}
+.form__link{
+	display: block;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #D31414;
+}
+.footer__button {
+	background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+	border-radius: 5px;
+	margin:0 0 50px 0;
+}
+.footer__button:hover{
+background: #E47209;
+cursor: pointer;
+}
+.footer__link {
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.footer__content {
+	display: flex;
+	margin:0 0 50px 0;
+	align-items: flex-end;
+}
+.content-footer__social {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+}
+
+.social {
+}
+.social__fb {
+}
+.fb {
+	display: flex;
+}
+.fb__icon {
+	margin: 0 12px 0 0;
+}
+.fb__icon:hover{
+	background: url("../../assets/images/petStory/footer/fb-active.svg") 0 0 no-repeat;
+}
+.fb__text {
+	font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #FFFFFF;
+}
+.fb__text:hover  {
+	color:#ABABAB;
+}
+.social__twit {
+}
+.twit {
+	display: flex;
+}
+.twit__icon {
+	margin: 0 12px 0 0;
+}
+.twit__icon:hover{
+	background: url("../../assets/images/petStory/footer/twit-active.svg") 0 0 no-repeat;
+}
+.twit__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #FFFFFF;
+}
+.twit__text:hover  {
+	color:#ABABAB;
+}
+.social__inst {
+}
+.inst {
+	display: flex;
+}
+.inst__icon {
+	margin: 0 12px 0 0;
+}
+.inst__icon:hover{
+	background: url("../../assets/images/petStory/footer/in-active.svg") 0 0 no-repeat;
+}
+.inst__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #FFFFFF;
+}
+.inst__text:hover  {
+	color:#ABABAB;
+}
+.social__yotube {
+}
+.yotube {
+	display: flex;
+}
+.yotube__icon {
+	margin: 0 12px 0 0;
+}
+.yotube__icon:hover{
+	background: url("../../assets/images/petStory/footer/yt-active.svg") 0 0 no-repeat;
+}
+.yotube__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #FFFFFF;
+}
+.yotube__text:hover  {
+	color:#ABABAB;
+}
+.content-footer__nav {
+	display: flex;
+	align-items: flex-end;
+}
+
+.nav__footer {
+	padding:0 172px 0 288px;
+	width: 362px;
+}
+.footer-nav {
+	
+}
+.footer-nav__list {
+	display: flex;
+	column-gap: 58px;
+}
+
+.footer-nav__item {
+
+}
+.footer-nav__link {
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #FFFFFF;
+}
+.footer-nav__link_active{
+	color: #FE9013;
+}
+.footer-nav__link:hover{
+	color: #FE9013;
+}
+.content-footer__desing {
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 130%;
+	color: #FFFFFF;
+}
+/* ---------------deskopt-small------------------------------------- */
+/* ----------------------------------------------------------------- */
+@media (max-width: 1000px) {
+	[class*="__container"]{
+		width: 940px;
+		}
+	[class*="__button"]{
+		border-radius: 25px;
+		width: 298px;
+		height: 54px;
+		}
+	.animal{
+		width: 1000px;
+		height: 584px;
+		background: url('../../assets/images/petStory/animal/Panda-small-deskop.jpg') 0 0 / cover no-repeat, url('/online-zoo/assets/images/petStory/animal/bg.jpg') 0 0 / cover no-repeat;
+		}
+	.header {
+		width: 1000px;
+		}
+	.header__container {
+	justify-content: start;	
+		padding: 14px 0;
+		}
+	.nav {
+		padding:0px 49px 0 64px;
+		}
+	.nav__item:not(:last-child){
+		padding: 0 48px 0 0;
+	}
+	.nav__item_hidden{
+		display: none;
+	}
+	.watch-online__title {
+		background: url('../../assets/images/petStory/animal/Ellipse-desktop-small.png') 74% -10px no-repeat;
+		font-size: 85px;
+		padding: 42px 0px 40px 426px;
+		}
+	.watch-online__button {
+		margin:  0px 0px 49px 535px;
+		}
+	.backstage {
+		padding: 110px 0 94px 0;
+		background: none;
+		}
+	.backstage__container {
+		gap: 32px;	
+	}
+
+	.backstage__image{
+	width: 455px;
+	height: 403px;
+	}
+	.backstage__img{
+		width: 455px;
+	height: 403px;
+	}
+	.backstage__body {
+		margin:  -9px 0 0 0;
+	}
+		.pets {
+			background: url('../../assets/images/petStory/pets/palm_foto-desktop-small.png') 0 875px no-repeat, url('/online-zoo/assets/images/petStory/pets/strelitzia-deskop-small.png') 100% 900px no-repeat;
+		}
+		.pets__slider {
+			margin: 0px;
+			position: relative;
+	  }
+		.slider-pets__arrow-left {
+		position: absolute;
+		left: 327px;
+		top: 371px;
+		z-index: 10;
+		}
+		.slider-pets__arrow-right{
+		position: absolute;
+		right: 318px;
+		top: 371px;
+		}
+		.carts__container {
+		gap: 91px 26px;
+			justify-content: stretch;
+			position: relative;
+				height: 805px;
+			
+				}
+		.carts-pets:nth-of-type(9){
+			display: block;
+		}
+		.carts-pets {
+			height: 354px;
+			border: 1px solid #FE9013;
+			border-radius: 5px;
+			position: relative;
+			overflow: hidden;
+			}
+			.cart-pets__image {
+				width: 294px;
+				height: 294px;
+			}
+			.carts-pets:nth-of-type(1){
+		  order: 1;
+	}
+			.carts-pets:nth-of-type(2){
+			order: 2;
+	}
+			.carts-pets:nth-of-type(3){
+			order: 6;
+	}
+			.carts-pets:nth-of-type(4){
+				order: 4;
+	}
+	.carts-pets:nth-of-type(5){
+		order: 5;
+	}
+		 .carts-pets:nth-of-type(6){
+		 order: 0;
+	}
+		 .carts-pets:nth-of-type(7){
+		 order: 3;
+	}
+		 .carts-pets:nth-of-type(8){
+			 order: 9;
+	}
+	.carts-pets:nth-of-type(9){
+		order: 8;
+	}
+	
+
+		.cart-pets__body_banana {
+			background: url('../../assets/images/petStory/pets/icon/banana-bamboo_icon.svg') 250px 8px no-repeat;
+		}
+	.carts-pets_hidden{
+		display: none;
+	}
+		.cart-pets__body_meet-fish{
+			background: url('../../assets/images/petStory/pets/icon/meet-fish_icon.svg') 240px 8px no-repeat;
+		}
+		.pets__button {
+		margin:0 0  140px 0;
+	}
+		.friend {
+			width: 1000px;
+			margin: 0 auto;
+			background: url('../../assets/images/petStory/friend/bg.jpg') 0 0 / cover no-repeat;
+			padding: 29px 0 50px 0;
+		}
+		.content__title {
+			padding:31px 0 22px 0;
+			}
+		.content__subtitle {
+			padding: 0 0 19px 49px;
+			}
+		.content__text {
+	padding: 0 0 12px 49px;
+			}
+		.body {
+			padding: 28px 0 69px 0;
+		}	
+		.friend__button {
+		margin:  0 0 51px 0;
+		}
+		.testimonials {
+			background: url("../../assets/images/petStory/testimonials/leav-deskopt-small.png") 100% 604px no-repeat;
+		}
+		.testimonials__title {
+			padding: 100px 0 2px 0;
+	}
+		.testimonials__cards{
+			column-gap: 25px;
+				margin: 0px;
+		}
+		.card-testimonials {
+			width: 292px;
+			height: 389px;
+	  }
+	  .card-testimonials:nth-of-type(4){
+		display: none;
+	  }
+	  .testimonials__line {
+		margin: 21px 0 52px 276px;
+  }
+  .testimonials__line::before {
+	width: 75px;
+	
+}
+		.card-testimonials__border{
+			width: 263px;
+			height: 356px;
+			}
+		.testimonials__button {
+		margin: 47px 0 140px 0px;
+			border-radius: 5px;
+		}
+		.logo-footer {
+			padding:0 457px 0 0;
+		}	
+		.footer {
+			width: 1000px;
+		}
+		.footer__body {
+		margin: 0 0 0 14px;
+		}
+		.form__inputs {
+			column-gap: 20px;
+	  }
+		.form__input {
+    width: 200px;
+    padding: 0px 7px 0px 1px;
+    height: 42px;
+}
+.form__button{
+	width: 129px;
+	height: 42px;
+	border-radius: 5px;
+}
+.footer__button {
+	border-radius: 5px;
+	margin: 0 0 45px 14px;
+}
+		.nav__footer {
+			padding:0px 44px 0 182px;
+			width: 362px;
+		}
+		.footer-nav__list {
+			column-gap: 48px;
+		}
+		.footer__content {
+			margin:0 0 50px 14px;
+		}
+	.footer__button {
+		margin:0 0 49px 14px;
+	}
+	.footer__button {
+		margin:0 0 49px 14px;
+	}
+}
+/* -------------------tablet------------------------------------- */
+/* -------------------------------------------------------------- */
+ @media (max-width: 640px) {
+	[class*="__container"]{
+		width: 600px;
+		}
+	[class*="__button"]{
+		border-radius: 25px;
+		width: 298px;
+		height: 54px;
+		}
+	.animal{
+		width: 640px;
+		height: 373px;
+		background: url('../../assets/images/petStory/animal/Giant\ Panda-tablet.jpg') 0 0 / cover no-repeat, url('/online-zoo/assets/images/petStory/animal/bg.jpg') 0 0 / cover no-repeat;
+		}
+	.watch-online__title {
+		background: url('../../assets/images/petStory/animal/Ellipse-tablet.png') 86% 10px no-repeat;
+		font-size: 54.2894px;
+      line-height: 75%;
+		padding: 48px 0px 0px 350px;
+			}
+	.watch-online__button {
+		margin: -7px 0px 19px 0px;
+		  }
+	.header {
+		width: 640px;
+		}
+	.logo-header__link {
+		font-size: 12.29px;
+		border: none;
+		}
+	.logo-header__image {
+	   top: 1px;
+		left: 2px;
+	  }
+   .nav{
+	   display: none;
+     }
+   .header__designed{
+	   display: none;
+}
+   .header__burger {
+	   width: 18px;
+	   height: 10px;
+position: relative;
+}
+.header.active .header__burger {
+top: 25px;
+right: 20px;
+position: absolute;
+}
+.burger__span:nth-of-type(1) {
+	content: "";
+	display: block;
+	width: 18px;
+	height: 2px;
+	background: #FFFFFF;
+	border-radius: 2px;
+	margin:  0 0 0 0;
+	top: 0px;
+	left: 0;
+	position: absolute;
+}
+.burger__span:nth-of-type(2) {
+	content: "";
+	display: block;
+	width: 18px;
+	height: 2px;
+	background: #FFFFFF;
+	border-radius: 2px;
+	margin: 0 0 0  0;
+	top: 4px;
+	left: 0;
+	position: absolute;
+}
+.burger__span:nth-of-type(3){
+	display: block;
+	width: 18px;
+	height: 2px;
+	background: #FFFFFF;
+	border-radius: 2px;
+	position: absolute;
+	top: 8px;
+	left: 0;
+}
+.header__burger.active .burger__span:nth-of-type(1) {
+	transform: rotate(-45deg);
+	top: 0;
+	left: 0;
+	transition: ease 0.7s;
+	background:#FE9013;
+	z-index: 55;
+}
+.header__burger.active .burger__span:nth-of-type(2){
+transform: rotate(45deg);
+	top: 0;
+	left: 0;
+	transition: ease 0.7s;
+	background:#FE9013;
+}
+.header__burger.active .burger__span:nth-of-type(3) {
+	transform: scale(0);
+	transition: ease 0.7s;
+	background:#FE9013;
+	}
+
+.header.active{
+	padding: 2px 0 0 10px;
+	margin: 0;
+	display: flex;
+	height: 329px;
+	width: 630px;
+	background-color: #fff;
+	position: absolute;
+	top: 0;left: 0;
+	z-index: 50;
+	transition: ease-in-out 0.5s all;
+}
+.header.active .header__container{
+	flex-direction: column;
+	align-items: start;
+	width: 640px;
+	row-gap: 15px;
+	justify-content: start;
+}
+.header.active .nav{
+	display: block;
+	padding: 0;
+}
+.header.active .header__logo {
+	z-index: 90;
+	border: 0.950725px solid #FE9013;
+	width: 65.6px;
+height: 41.6px;
+margin: 0 0 15px 0;
+}
+.header.active .logo-header__link {
+	display: block;
+	color:#FE9013;
+	font-size: 15.2116px;
+line-height: 120%;
+}
+.bg {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 28;
+	display: none;
+ }
+ .bg.active-color {
+	display: block;
+ }
+.header.active .nav__item_hidden{
+	display: block;
+}
+.header.active .header__designed {
+	display: block;	
+}
+.header.active .designed-header__link {
+color: #333B41;
+}
+.header.active .nav__list{
+	flex-direction: column;
+	row-gap: 15px;
+}
+.header.active .nav__link{
+font-size: 16px;
+line-height: 140%;
+color: #333B41;
+}
+.header{
+	height: 34px;
+}
+.header__container{
+	justify-content: space-between;
+	align-items: center;
+	padding: 2.29px 0 2.68px 0;
+}
+.header__logo{
+	width: 47px;
+	height: 29px;
+	
+}
+.backstage {
+    padding: 70px 0 0px 0;
+    background: url('../../assets/images/petStory/backstage/flower_foto1-tablet.png') 100% -5px no-repeat; 
+}
+.backstage__body {
+	margin: -9px 0 0 -8px;
+}
+.backstage__image {
+	display: none;
+}
+.backstage__title {
+	padding: 0 0 22px 12px;
+}
+.backstage__text {
+	padding: 0 109px 29px 9px;
+}
+.backstage__subtitle {
+	padding: 0 0 20px 12px;
+}
+.pets{
+	row-gap: 10px;
+}
+.pets__slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+	padding: 56px 0 0 0;
+}
+.slider-pets__arrow-left {
+	position: absolute;
+	left: 220px;
+	top: 400px;
+	z-index: 10;
+	}
+	.slider-pets__arrow-right{
+	position: absolute;
+	right: 220px;
+	top: 399px;
+	}
+.carts-pets {
+	height: 332px;
+	}
+	.cart-pets__image {
+		width: 285.24px;
+		height: 285.24px;
+	}
+	.carts__container {
+		gap: 92px 25px;
+ }
+ .carts-pets:nth-child(5) {
+	right: 214px;
+	top: 343px;
+}
+.carts-pets:nth-child(4) {
+	left: 230px;
+	top: 343px;
+}
+.carts-pets:nth-of-type(1){
+	order: 1;
+}
+	 .carts-pets:nth-of-type(2){
+	 order: 2;
+}
+	 .carts-pets:nth-of-type(3){
+	 order: 3;
+}
+	 .carts-pets:nth-of-type(4){
+		 order: 4;
+}
+.carts-pets:nth-of-type(5){
+ order: 5;
+}
+  .carts-pets:nth-of-type(6){
+  order: 0;
+}
+  .carts-pets:nth-of-type(7){
+display: none;
+}
+  .carts-pets:nth-of-type(8){
+display: none;
+}
+.carts-pets:nth-of-type(9){
+ order: 4;
+}
+.cart-pets__title {
+	font-size: 12.4695px;
+}
+.cart-pets__text {
+font-size: 11.6901px;
+}
+.pets__button {
+	margin: 0 0 102px 0;
+}
+.pets {
+	background: url(../../assets/images/petStory/pets/palm_tablet.png) 0 825px no-repeat, url(/online-zoo/assets/images/petStory/pets/strelitzia-tablet.png) 100% 897px no-repeat;
+}
+.friend {
+	width: 640px;
+	padding: 19px 0 20px 0;
+}
+.friend__container{
+	width: 640px;
+}
+.content__title {
+	font-size: 42px;
+	padding: 11px 0 20px 0;
+}
+.content__subtitle {
+	padding: 0 0 20px 18px;
+	font-size: 22px;
+}
+.content__text {
+	padding: 0 0 10px 19px;
+}
+.body {
+	padding: 20px 0 39px 0;
+}
+.body__title {
+	padding: 0 0 20px 0;
+}
+.card:not(:last-child):before {
+background: url('../../assets/images/petStory/friend/arrow-greeen.png') 0 0 no-repeat;
+width: 89px;
+height: 29px;
+position: absolute;
+top: -18px;
+left: 140px;
+z-index: 78;
+}
+.body__cards {
+	column-gap: 42px;
+	margin: 0 0 0 -10px;
+}
+.friend__button {
+	margin: 0 0 60px 0;
+}
+.testimonials {
+	background: url(../../assets/images/petStory/testimonials/leav_tablet.png) 100% 538px no-repeat;
+}
+.testimonials__title {
+	padding: 62px 0 2px 12px;
+}
+.testimonials__cards {
+
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	row-gap: 15px;
+}
+.testimonials__cards{
+	column-gap: 30px;
+		margin: 0 0 0 9px;
+}
+.card-testimonials {
+	width: 600px;
+	height: 109px;
+	overflow: hidden;
+}
+.card-testimonials__border {
+	width: 600px;
+	height: 109px;
+	overflow: hidden;
+}
+.card-testimonials__text {
+	height: 38px;
+	width: 533px;
+	overflow: hidden;
+	font-weight: 300;
+font-size: 15px;
+line-height: 120%;
+}
+.testimonials__line {
+	display: none;
+}
+.testimonials__button {
+	margin: 50px 0 140px 10px;
+}
+.testimonials__button {
+	margin: 32px 0 80px 190px;
+	width: 240px;
+height: 54px;
+border-radius: 5px;
+}
+.footer {
+	width: 640px;
+
+}
+.footer__container{
+		position: relative;
+}
+.footer__body {
+	padding: 12px 0 36px 0;
+	margin: 0;
+}
+.form {
+	display:none;
+}
+.footer__button {
+	margin: 0px;
+	width: 298px;
+height: 54px;
+border-radius: 5px;
+}
+.content-footer__social {
+	position: absolute;
+	top: 12px;
+	right: -12px;
+	row-gap: 20px;
+}
+.fb__text,
+.twit__text,
+.inst__text,
+.yotube__text{
+	display: none;
+}
+.nav__footer {
+	padding: 95px 10px 0 0px;
+
+
+}
+.footer__content{
+	margin: 0 0 50px 0px;
+}
+.footer-nav__list {
+	column-gap: 37px;
+}
+}
+ /* -------------------mobile------------------------------------- */
+/* -------------------------------------------------------------- */
+@media (max-width: 320px) {
+	[class*="__container"]{
+		width: 300px;
+		}
+	.animal {
+		width: 320px;
+		height: 221px;
+		background: url(../../assets/images/petStory/animal/Panda-mobile.jpg) 0 0 / cover no-repeat, url(/online-zoo/assets/images/petStory/animal/bg.jpg) 0 0 / cover no-repeat;
+  }
+  .header {
+	width: 320px;
+}
+.header.active{
+	width: 310px;
+}
+
+.watch-online__title {
+	background: url(../../assets/images/petStory/animal/Ellipse-mobile.png) 84% 23px no-repeat;
+	font-size: 28px;
+	padding: 42px 0px 0px 170px;
+}
+.watch-online__button {
+	margin: 59px 0px 19px 0px;
+}
+.backstage__title {
+	padding: 44px 0 10px 0px;
+	font-size: 24px;
+}
+.backstage__text {
+	padding: 0 1px 20px 2px;
+}
+.backstage__subtitle {
+	padding: 0 0 12px 2px;
+}
+.pets {
+	background: url(../../assets/images/petStory/pets/palm_mobile.png) 0 100% no-repeat, url(/online-zoo/assets/images/petStory/pets/strelitzia-mobile.png) 100% 100% no-repeat;
+}
+.pets__slider {
+	padding: 28px 0 0 0;
+	
+}
+.slider-pets__arrow-left {
+	display: none;
+	}
+	.slider-pets__arrow-right{
+	display: none;
+	}
+.cart-pets__title {
+	padding: 8px 0 0 12px;
+}
+.cart-pets__text {
+	padding: 0 0 0 11px;
+}
+.cart-pets__body_meet-fish {
+	background: url(../../assets/images/petStory/pets/icon/meet-fish_icon.svg) 235px 4px no-repeat;
+}
+.cart-pets__body_banana {
+	background: url(../../assets/images/petStory/pets/icon/banana-bamboo_icon.svg) 245px 4px no-repeat;
+}
+.carts__container {
+	gap: 18px 0px;
+	height: auto;
+}
+.pets__button {
+	margin: -35px 0 59px 0;
+}
+.friend {
+	width: 320px;
+}
+.content__title {
+	font-size: 24px;
+	padding: 21px 0 12px 0;
+}
+.content__subtitle {
+	padding: 0 0 20px 0px;
+	font-size: 18px;
+	text-align: center;
+}
+.content__text {
+	display: none;
+}
+.body__title {
+	padding: 0 0 18px 0;
+	font-size: 24px;
+}
+.body {
+	padding: 0px 0 30px 0;
+}
+.body__cards {
+	row-gap: 10px;
+	margin: 0 0 0 -10px;
+	flex-direction: column;
+}
+.card__image {
+	margin: 0 0 8px 0;
+	
+}
+.card:not(:last-child):before {
+	top: 192px;
+	left: 142px;
+	z-index: 78;
+	transform: rotate(83.94deg);
+}
+.card {
+	width: 168px;
+	height: 231px;
+	position: relative;
+	margin: 0 0 0 7px;
+}
+.card:nth-child(3) {
+	margin: 10px 0 0 7px;
+}
+.friend__button {
+	margin: 0 0 40px 0;
+}
+.testimonials__title {
+	padding: 29px 0 20px 12px;
+	font-size: 24px;
+}
+.card-testimonials {
+	width: 299px;
+	height: 107px;
+}
+.testimonials__cards {
+	row-gap: 13px;
+}
+.card-testimonials__border {
+	width: 299px;
+	height: 107px;
+	padding: 10px 15px 10px 12px;
+}
+.carts__container {
+	gap: 18px 0px;
+	height: 1390px;
+}
+.carts-pets:nth-of-type(1) {
+	order: 0;
+}
+.carts-pets:nth-of-type(2) {
+	order: 1;
+}
+.carts-pets:nth-of-type(3) {
+	order: 2;
+}.carts-pets:nth-of-type(4) {
+display: none;
+}
+.carts-pets:nth-of-type(5) {
+display: none;
+}
+.carts-pets:nth-of-type(6) {
+display: none;
+}
+.carts-pets:nth-of-type(7) {
+	order: 3;
+	display: block;
+}
+.carts-pets:nth-of-type(8) {
+display: none;
+}
+.testimonials__button {
+	margin: 32px 0 60px 30px;
+}
+.footer {
+	width: 320px;
+	height: 334px;
+}
+.logo-footer {
+	padding: 0 0px 0 0;
+
+}
+.logo-footer__link {
+border: none;
+padding: 0;
+}
+.body-footer__logo {
+	width: 300px; 
+	height: 23px; 
+}
+.footer__body {
+	padding: 20px 0 85px 0;
+	margin: 0;
+}
+.logo-footer__image {
+	position: absolute;
+	width: 10px;
+	height: 35px;
+	top: -12px;
+	left: 158px;
+}
+.content-footer__social {
+	position: absolute;
+	top: 72px;
+	right: 40px;
+	column-gap: 19px;
+	flex-direction: row;
+}
+.nav__footer {
+	padding: 110px 10px 0 0px;
+}
+.footer__content {
+	margin: 0 0 0px 0px;
+}
+.content-footer__desing {
+	position: absolute;
+	top: 205px;
+	left: 85px;
+	width: 234px;
+	line-height: 200%;
+}
+}
